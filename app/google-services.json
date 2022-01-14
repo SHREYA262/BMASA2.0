@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "505555844556",
+    "project_id": "bmasa-915ef",
+    "storage_bucket": "bmasa-915ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505555844556:android:2c29f8ea36b036b5613169",
+        "android_client_info": {
+          "package_name": "com.example.bmasa20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505555844556-qnqa6svm13op241a8fnc1f6l0tqi7tgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMMffOGXkl66AU6OBbQUm_ID4kJu8zfnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505555844556-qnqa6svm13op241a8fnc1f6l0tqi7tgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
