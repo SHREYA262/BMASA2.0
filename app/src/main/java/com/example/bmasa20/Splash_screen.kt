@@ -6,12 +6,12 @@ import android.os.Bundle
 import android.os.Handler
 import com.google.firebase.auth.FirebaseAuth
 
-class MainActivity : AppCompatActivity() {
+class Splash_screen : AppCompatActivity() {
 
     private lateinit var mAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_splash)
 
         mAuth =FirebaseAuth.getInstance()
         val user=mAuth.currentUser
@@ -19,12 +19,12 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         Handler().postDelayed({
             if(user != null){
-                val dashboardIntent= Intent(this,MainActivity3::class.java)
+                val dashboardIntent= Intent(this,Home_Activity::class.java)
                 startActivity(dashboardIntent)
                 finish()
             }
             else{
-            val signInIntent = Intent(this,MainActivity2::class.java)
+            val signInIntent = Intent(this,Login_Activity::class.java)
             startActivity(signInIntent)}
             finish()
         },2000)

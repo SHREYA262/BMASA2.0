@@ -3,22 +3,17 @@ package com.example.bmasa20
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.util.Log
 import android.widget.Toast
-import androidx.core.os.HandlerCompat
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.common.util.concurrent.HandlerExecutor
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
-import android.media.Image as ImageView
-import android.widget.ImageButton as WidgetImageButton
 
 
-class MainActivity2 : AppCompatActivity() {
+class Login_Activity : AppCompatActivity() {
 
     companion object{
         private const val RC_SIGN_IN = 120
@@ -29,7 +24,7 @@ class MainActivity2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_login)
         supportActionBar?.hide()
         // Configure Google Sign In
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -89,9 +84,9 @@ class MainActivity2 : AppCompatActivity() {
                     var email = user?.email
 
 
-                    if(email=="shreyak.it.21@nitj.ac.in"||email=="abhishekb.it.21@nitj.ac.in"||email=="mehulg.it.21@nitj.ac.in"||email=="bhavyas.cs.21@nitj.ac.in"||email=="aiman.ic.21@nitj.ac.in") {
+                    if(email=="shreyak.it.21@nitj.ac.in"||email=="abhishekb.it.21@nitj.ac.in"||email=="mehulg.it.21@nitj.ac.in"||email=="bhavyas.cs.21@nitj.ac.in"||email=="aiman.ic.21@nitj.ac.in"||email == "prashantp.cs.21@gmail.com") {
                         Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this, MainActivity3::class.java)
+                        val intent = Intent(this, Home_Activity::class.java)
                         startActivity(intent)
                         finish()
                     }

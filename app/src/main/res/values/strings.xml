@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">BMASA2.0</string>
+    <string name="app_name">BMASA</string>
     <string name="welcome">WELCOME</string>
     <string name="user_name">user_name</string>
     <string name="user_email">user_email</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

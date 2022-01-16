@@ -9,14 +9,14 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
 
-class MainActivity3 : AppCompatActivity() {
+class Profile_Activity : AppCompatActivity() {
 
     private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main3)
+        setContentView(R.layout.activity_profile)
 
         supportActionBar?.hide()
 
@@ -36,7 +36,7 @@ class MainActivity3 : AppCompatActivity() {
         logout_btn?.setOnClickListener()
         {
             mAuth.signOut()
-            val intent = Intent(this,MainActivity2::class.java)
+            val intent = Intent(this,Login_Activity::class.java)
             startActivity(intent)
             finish()
         }

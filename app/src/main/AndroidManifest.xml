@@ -10,13 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BMASA20">
         <activity
-            android:name=".MainActivity3"
+            android:name=".Availability_Activity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".Chat_Activity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Home_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
